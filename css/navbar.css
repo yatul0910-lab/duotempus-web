@@ -1,0 +1,57 @@
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 18px 50px;
+  background: linear-gradient(90deg, #020b12, #041a24);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #00b7ff;
+}
+
+/* Center Nav */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-center a {
+  color: #dff5ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  color: #00b7ff;
+}
+
+/* Button */
+.btn-primary {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 8px 18px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-center {
+    flex-wrap: wrap;
+  }
+}

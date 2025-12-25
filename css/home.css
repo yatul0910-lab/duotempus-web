@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: #e6f7ff;
+}
+
+/* Navbar */
+
+
+
+
+.btn-primary {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #00b7ff;
+  padding: 10px 20px;
+  color: #00b7ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #00b7ff;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #b9eaff;
+}
+
+.accent {
+  color: #00c6ff;
+}
+
+.hero-actions {
+  margin-top: 40px;
+}
+
+.hero-actions button {
+  margin: 0 10px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
+}
+
+.stat h2 {
+  font-size: 36px;
+  color: #00b7ff;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #9adfff;
+}

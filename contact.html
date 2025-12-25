@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | DevFuture</title>
+
+  <!-- Common Navbar CSS -->
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <!-- Contact Page CSS -->
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- COMMON NAVBAR -->
+  <div id="navbar-container"></div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+
+    <h1 class="contact-title">
+      Let's Build <span>Together</span>
+    </h1>
+    <div class="title-line"></div>
+
+    <p class="contact-subtitle">
+      Ready to transform your ideas into reality?
+      Get in touch and let’s discuss how I can help bring your vision to life.
+    </p>
+
+    <div class="contact-content">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-left">
+        <h3>Why Work With Me?</h3>
+
+        <div class="reason">
+          <span>⚡</span>
+          <div>
+            <h4>Quick Response</h4>
+            <p>I respond to all inquiries within 24 hours, usually much faster.</p>
+          </div>
+        </div>
+
+        <div class="reason">
+          <span>💬</span>
+          <div>
+            <h4>Clear Communication</h4>
+            <p>Regular updates and transparent project discussions.</p>
+          </div>
+        </div>
+
+        <div class="reason">
+          <span>🤝</span>
+          <div>
+            <h4>Dedicated Support</h4>
+            <p>Support and guidance throughout the project lifecycle.</p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div>
+            <h2>24h</h2>
+            <p>Response Time</p>
+          </div>
+          <div>
+            <h2>100%</h2>
+            <p>Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="contact-right">
+        <h3>Start Your Project</h3>
+
+        <form onsubmit="sendToWhatsApp(event)">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" required>
+
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+
+          <label>Project Details</label>
+          <textarea id="message" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
+
+          <button type="submit">
+            Send Message →
+          </button>
+        </form>
+
+        <p class="direct-contact">
+          Prefer email? Reach me directly at
+          <a href="mailto:atulattre@gmail.com">atulattre@gmail.com</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMON JS -->
+  <script src="js/common.js"></script>
+
+  <!-- WhatsApp Redirect Script -->
+  <script>
+    function sendToWhatsApp(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const phoneNumber = "917984121062"; // WhatsApp number with country code
+
+      const whatsappMessage = encodeURIComponent(
+        `Hi Atul 👋\n\nName: ${name}\nEmail: ${email}\n\nProject Details:\n${message}`
+      );
+
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+
+</body>
+</html>
